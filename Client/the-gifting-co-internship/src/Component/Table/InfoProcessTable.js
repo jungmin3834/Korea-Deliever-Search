@@ -11,10 +11,10 @@ class InfoProcessTable extends Component {
             </label>
         	<table style={{margin:"auto"}}> 
                  <colgroup style={{width:"100%"}}>
-                    <col style={{width:"20%"}}/>
-					<col style={{width:"20%"}}/>
-					<col style={{width:"20%"}}/>
-					<col style={{width:"10%"}}/>
+				 	<col style={{width:"250px"}}/>
+                	<col style={{width:"250px"}}/>
+                	<col style={{width:"250px"}}/>
+                	<col style={{width:"250px"}}/>
 				</colgroup>
 				<thead>
 					<tr>
@@ -24,12 +24,37 @@ class InfoProcessTable extends Component {
 						<th scope="col">상품 정보</th>
 					</tr>
 				 </thead>
-				 
 				 <tbody>
-					<td  id="invcNo">{"asdasd"}</td>
-                    <td  id="sendrNm">{"asdasd"}</td>
-                    <td class="text-alignCenter" id="rcvrNm">{"asdasd"}</td>
-                    <td class="text-alignCenter" id="itemNm">{"asdasd"}</td>
+					 <tr>
+						<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+					</tr>
+					<tr>
+						<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+					</tr>
+					<tr>
+						<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+					</tr>
+					<tr>
+						<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+					</tr>
+					<tr>
+						<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+                    	<td >{"undefined"}</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>

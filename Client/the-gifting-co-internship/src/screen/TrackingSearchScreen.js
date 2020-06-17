@@ -4,7 +4,7 @@ import InfoProcessTable from '../Component/Table/InfoProcessTable';
 import InfoTable from '../Component/Table/InfoTable';
 import CodeInput from '../Component/Input/CodeInput';
 import InvoiceInput from '../Component/Input/InvoiceInput';
-
+import ButtonSubmit from '../Component/Button/ButtonSubmit'
 
 class TrackingSearchScreen extends React.Component {
   constructor(props) {
@@ -70,17 +70,22 @@ class TrackingSearchScreen extends React.Component {
   render() {
     return (  
       <div style={{width:"100%", height:"100%"}}> 
-        <div style={{margin:"10% 0% 8% 0%"}}>
-        <div>
-            <h1>검색창</h1> 
+        <div style={{height:"100%", margin:"10% 0% 8% 0%"}}>
+        <div >
+            <h1 style={{paddingTop:"10%" ,paddingBottom:"2%"}}>검색창</h1> 
         </div>
          <form onSubmit={this.mySubmitHandler}>
+         <div style={{marginTop:"0.3%"}}>
             <CodeInput   inputCode={this.inputCode} />
+          </div>
+          <div style={{marginTop:"0.3%"}}>
             <InvoiceInput invoice={this.state.invoice} inputInvoice={this.inputInvoice}/>
-            <button type="submit" class="btn-search" >조회하기</button>
+          </div>
+          <div style={{marginTop:"2%"}}>
+            <ButtonSubmit/>
+          </div>
         </form>
-        </div>
-        <div style={{margin:"auto", backgroundColor:'black' ,width:"100%",height:"300px"}}>
+        <div style={{paddingTop:"5%", margin:"auto", width:"100%",height:"100%"}}>
         { 
           this.state.isData === true ? (
             <div>
@@ -92,6 +97,7 @@ class TrackingSearchScreen extends React.Component {
               </div>
             </div>) : null
          }
+        </div>
         </div>
       </div>
 

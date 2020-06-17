@@ -9,11 +9,11 @@ class InfoTable extends Component {
             </label>
         <table style={{margin:"auto"}}> 
              <colgroup>
-                <col style={{width:"30%"}}/>
-                <col style={{width:"30%"}}/>
-                <col style={{width:"30%"}}/>
-                <col style={{width:"20%"}}/>
-                <col style={{width:"20%"}}/>
+                <col style={{width:"250px"}}/>
+                <col style={{width:"200px"}}/>
+                <col style={{width:"150px"}}/>
+                <col style={{width:"250px"}}/>
+                <col style={{width:"150px"}}/>
             </colgroup>
             <thead>
                 <tr>
@@ -26,18 +26,11 @@ class InfoTable extends Component {
              </thead>
              <tbody>
                 <tr>
-                    <td class="text-alignCenter" id="invcNo">{"asdasd"}</td>
-                    <td class="text-alignCenter" id="sendrNm">{"asdasd"}</td>
-                    <td class="text-alignCenter" id="rcvrNm">{"asdasd"}</td>
-                    <td class="text-alignCenter" id="itemNm">{"asdasd"}</td>
-                    <td class="text-alignCenter" id="itemNm">{"asdasd"}</td>
-                </tr>
-                <tr>
-                    <td class="text-alignCenter" id="invcNo">{this.props.number}</td>
-                    <td class="text-alignCenter" id="sendrNm">{this.props.sender}</td>
-                    <td class="text-alignCenter" id="rcvrNm">{this.props.geter}</td>
-                    <td class="text-alignCenter" id="itemNm">{this.props.itemName}</td>
-                    <td class="text-alignCenter" id="qty">{this.props.itemName}</td>
+                    <td >{this.props.number === undefined ? "x" : this.props.number}</td>
+                    <td >{this.props.sender=== undefined ? "x" : this.props.sender}</td>
+                    <td >{this.props.geter=== undefined ? "x" : this.props.geter}</td>
+                    <td >{this.props.itemName=== undefined ? "x" : this.props.itemName}</td>
+                    <td >{this.props.itemName=== undefined ? "x" : this.props.itemName}</td>
                 </tr>
             </tbody>
         </table>

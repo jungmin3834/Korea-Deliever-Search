@@ -1,26 +1,31 @@
-input{
+input,select{
     box-sizing: border-box;
-    width: 67%;
+    width: 30%;
     height: 50px;
     padding: 0 30px;
     border : solid 1px #686868;
     font-size: 16px;
     line-height: 50px;
-    color: #007ac3;
     background: #fff;
-    margin-bottom: 5px;
-    margin-right: 0.8%;
+    
+    margin:auto
 }
 
 .btn-search{
-    margin-right: 19.2%;
-    float:right;
-    width: 20%;
-    height: 40px;
+    box-sizing: border-box;
+    width: 30.3%;
+    height: 50px;
+    padding: 0 30px;
+    color: #fff;
+    border : solid 1px #686868;
+    font-size: 16px;
+    line-height: 50px;
+    background: rgb(38, 38, 38);
+    margin:auto
 }
 
 label{
-    font-size: 20px;
+    font-size: 100%;
     margin-right: 10px;
 }
 
@@ -34,36 +39,33 @@ table {
     border-color: grey;
 }
 
-caption, legend {
-    font-size: 0;
-    line-height: 0;
-    text-indent: -5000px;
-}
 
 thead {
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
 }
+
 table th {
-    padding: 13px 0;
+    padding-top: 10px;
     text-align: center;
     border-bottom: solid 1px #bec0c2;
-    background: #494949;
-    font-weight: 400;
+    background: rgb(38, 38, 38);
+    font-weight: 4500;
     font-family: 'NotoSansKR-Bold';
-    font-size: 16px;
-    color: rgb(201, 201, 201);
+    font-size: 15px;
+    color: #fff;
     border-right: 1px solid #e3e4e5;
 }
 
 table td {
+    height: 20px;
     padding: 7px 10px 9px 30px;
     text-align: left;
     border-bottom: solid 1px #e3e4e5;
     background: #fff;
     font-size: 16px;
-    color: #666;
+    color: rgb(38, 38, 38);
     border-right: 1px solid #e3e4e5;
     line-height: 28px;
     font-family: 'NotoSansKR-Regular';
