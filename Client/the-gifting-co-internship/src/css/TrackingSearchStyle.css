@@ -1,17 +1,15 @@
 input{
     box-sizing: border-box;
-    width: 50%;
+    width: 67%;
     height: 50px;
     padding: 0 30px;
-    border-top: solid 1px #e5e5e5;
-    border-bottom: solid 1px #e5e5e5;
-    border-left: solid 1px #e5e5e5;
+    border : solid 1px #686868;
     font-size: 16px;
     line-height: 50px;
     color: #007ac3;
     background: #fff;
     margin-bottom: 5px;
-    margin-left: 10px;
+    margin-right: 0.8%;
 }
 
 .btn-search{
@@ -23,6 +21,7 @@ input{
 
 label{
     font-size: 20px;
+    margin-right: 10px;
 }
 
 
