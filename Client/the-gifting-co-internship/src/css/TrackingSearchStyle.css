@@ -1,19 +1,20 @@
 input,select{
     box-sizing: border-box;
-    width: 30%;
+    width: 32.7%;
     height: 50px;
     padding: 0 30px;
     border : solid 1px #686868;
     font-size: 16px;
     line-height: 50px;
     background: #fff;
-    
-    margin:auto
+
+    margin:auto;
 }
+
 
 .btn-search{
     box-sizing: border-box;
-    width: 30.3%;
+    width: 34.3%;
     height: 50px;
     padding: 0 30px;
     color: #fff;
@@ -21,11 +22,27 @@ input,select{
     font-size: 16px;
     line-height: 50px;
     background: rgb(38, 38, 38);
-    margin:auto
+    margin:auto;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+.inputSpan{
+    padding-bottom: 14px;
+    padding-top: 13px; 
+    margin-right: 1px;
+    background: rgb(38, 38, 38);
+    border : solid 1px #686868;
+}
+
+
+.inputLabel{
+    color:#fff;
+    font-size: 100%;
+    padding-left: 1%;
 }
 
 label{
-    font-size: 100%;
     margin-right: 10px;
 }
 
@@ -47,7 +64,8 @@ thead {
 }
 
 table th {
-    padding-top: 10px;
+    height: 25px;
+    padding-bottom: 8px;
     text-align: center;
     border-bottom: solid 1px #bec0c2;
     background: rgb(38, 38, 38);

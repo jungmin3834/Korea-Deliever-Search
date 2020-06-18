@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 
-
+//운송장 번호 컴포넌트 
 class InvoiceInput extends Component {
   constructor(props) {
     super(props);
@@ -29,14 +29,15 @@ class InvoiceInput extends Component {
   render() {
     return (
         <Container>
-              <label for="t_invoice">운송장 번호 : </label>
-              <input type="text" 
+          <span className="inputSpan">
+             <label className="inputLabel" htmlFor="t_invoice">운송장 번호 : </label>
+          </span> 
+          <input type="text" 
                 value={this.props.invoice} 
-                onPaste={(e)=>{this.handleClick(e.clipboardData.getData('Text'))}} 
-                onInput={(e)=>{this.handleClick(e.target.value)}}  
+                onChange={(e)=>{this.handleClick(e.target.value)}}
                 name="t_invoice"
                 placeholder="운송장 번호"
-                />
+            />
         </Container>
     );
   }

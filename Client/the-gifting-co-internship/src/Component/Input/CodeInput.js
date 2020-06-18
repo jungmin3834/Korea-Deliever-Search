@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 
-
+//택배 회사 번호 컴포넌트 
 class CodeInput extends Component {
   constructor(props) {
     super(props);
@@ -28,12 +28,14 @@ class CodeInput extends Component {
   render() {
     return (
         <Container>
-              <label  >택배사 코드 : </label>
-              <select  id="company-list" onChange={(e)=>{this.selectChange(e.target.value)}}>
-                <option value="04"> CJ대한통운</option>
-                <option value="05"> 한진택배</option>
-                <option value="23"> 경동택배</option>
-              </select>
+          <span className="inputSpan">
+              <label className="inputLabel" >택배사 코드 : </label>
+          </span>
+          <select  style={{paddingBottom:"1px"}} id="company-list" onChange={(e)=>{this.selectChange(e.target.value)}}>
+              <option value="04"> CJ대한통운</option>
+              <option value="05"> 한진택배</option>
+              <option value="23"> 경동택배</option>
+          </select>
         </Container>
     );
   }

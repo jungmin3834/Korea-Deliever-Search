@@ -6,10 +6,10 @@ class InfoProcessTable extends Component {
   render() {
     return (
         <div>
-            <label style={{margin:"auto"}}>
+            <label style={{fontSize:"200%", margin:"auto"}}>
                 상품 상태 확인
             </label>
-        	<table style={{margin:"auto"}}> 
+        	<table style={{paddingTop:"1%", margin:"auto"}}> 
                  <colgroup style={{width:"100%"}}>
 				 	<col style={{width:"250px"}}/>
                 	<col style={{width:"250px"}}/>
@@ -25,36 +25,7 @@ class InfoProcessTable extends Component {
 					</tr>
 				 </thead>
 				 <tbody>
-					 <tr>
-						<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-					</tr>
-					<tr>
-						<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-					</tr>
-					<tr>
-						<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-					</tr>
-					<tr>
-						<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-					</tr>
-					<tr>
-						<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-                    	<td >{"undefined"}</td>
-					</tr>
+					 {this.props.process}
 				</tbody>
 			</table>
 		</div>
