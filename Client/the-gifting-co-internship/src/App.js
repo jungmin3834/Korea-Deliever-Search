@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TrackingSearchPage from './Pages/TrackingSearchPage';
 import Logo from './Component/Image/Logo';
 import './css/App.css';
-
+import {  animateScroll as scroll } from 'react-scroll'
 
 class App extends Component {
   constructor(props){
@@ -13,6 +13,8 @@ class App extends Component {
 
 
   searchMode =()=>{
+    if(this.state.isSearchMode === false)
+           scroll.scrollToBottom();
       this.setState({isSearchMode:true});
   }
 
