@@ -1,22 +1,35 @@
-const express = require("express");
-const bodyParser = require('body-parser');
-const controll = require('./commendControl');
-const cors = require('cors');
-const app = express();
+const apiKey = "5Mp0JfZdnAi9aYO3WuBS8g";
+const fetch = require('node-fetch');
 
-app.use(cors());
-app.use(bodyParser());
+const controll = {
+  testCase(req,res){
+      res.send(testCase1);
+  },
+   getTrackingInfo(req,res){
+    //res.header("Access-Control-Allow-Origin", "*");
+    var getData = 't_key='+ apiKey +'&t_code='+ req.body.code +'&t_invoice='+req.body.invoice;
+    var url = 'http://info.sweettracker.co.kr/api/v1/trackingInfo?';
+    fetch(url + getData)
+      .then(res => res.text())
+      .then(json => {
+        console.log(json);
+        res.send(json)
+    });
+  },
+  trackingInfo(req,res){
+    //res.header("Access-Control-Allow-Origin", "*");
+    var getData = 't_key='+ apiKey +'&t_code='+ req.body.code +'&t_invoice='+req.body.invoice;
+    var url = 'http://info.sweettracker.co.kr/api/v1/trackingInfo?';
+    fetch(url + getData)
+      .then(res => res.text())
+      .then(json => {
+        console.log(json);
+        res.send(json)
+      });
+  },
+}
 
-app.get("/test/case1", (req, res) => {  controll.testCase(req,res); });
-
-app.get("/api/getTrackingInfo", (req, res) => {controll.getTrackingInfo(req,res);});
-
-app.post("/api/trackingInfo", (req, res) => {  controll.trackingInfo(req,res);});
-
-
-app.listen(7878, () => {
- console.log("Server running on port 7878");
-});
+module.exports = controll;
 
 
 const testCase1 = '{"result":"Y","senderName":"주식*","receiverName":"손병*","itemName":"카멜","invoiceNo":"631693783814","receiverAddr":"경기도 안양*****","orderNumber":null,"adUrl":null,"estimate":"15∼17시","level":5,"complete":false,"recipient":"","ite'+
