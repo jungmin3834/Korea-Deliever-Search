@@ -19,9 +19,9 @@ class InfoProcessTable extends Component {
 				<thead>
 					<tr>
 					    <th scope="col">처 리</th>
-					    <th scope="col">상품상태</th>
+					    <th scope="col">시 간</th>
 						<th scope="col">전화번호</th>
-						<th scope="col">상품 정보</th>
+						<th scope="col">위 치</th>
 					</tr>
 				 </thead>
 				 <tbody>

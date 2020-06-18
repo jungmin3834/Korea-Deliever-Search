@@ -23,13 +23,13 @@ class InvoicApiForm extends Component {
         <Container>
             <form style={{paddingTop:"1%"}} onSubmit={this.props.mySubmitHandler}>
                 <div style={{marginTop:"0.3%"}}>
-                    <CodeInput   inputCode={this.props.inputCode} />
+                    <CodeInput code={this.props.code}  inputCode={this.props.inputCode} />
                 </div>
                 <div style={{marginTop:"0.3%"}}>
                     <InvoiceInput invoice={this.props.invoice} inputInvoice={this.props.inputInvoice}/>
                 </div>
                 <div style={{marginTop:"1%"}}>
-                    <ButtonSubmit/>
+                    <ButtonSubmit  title={"조회하기"}/>
                 </div>
             </form>
         </Container>

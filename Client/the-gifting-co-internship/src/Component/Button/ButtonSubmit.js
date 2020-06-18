@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import styled from "styled-components";
 
 
@@ -16,12 +16,14 @@ const Container = styled.div`
 
 
 //조회하기
-function ButtonSubmit(){
-    return (
+class ButtonSubmit extends Component {
+    render() {
+        return(
         <Container>
-              <button className="btn-search"  type="submit" >조회하기</button>
+              <button className="btn-search" onClick={this.props.clickHistory === undefined ? null :this.props.clickHistory}  type="submit" >{this.props.title}</button>
         </Container>
-    );
+        );
+    }
 }
 
 export default ButtonSubmit

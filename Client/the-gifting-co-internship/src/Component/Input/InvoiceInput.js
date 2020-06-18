@@ -21,7 +21,7 @@ class InvoiceInput extends Component {
     this.handleClick = this.handleClick.bind(this);
 
   }
-  
+
   handleClick = (e) => {
     this.props.inputInvoice(e);
   };

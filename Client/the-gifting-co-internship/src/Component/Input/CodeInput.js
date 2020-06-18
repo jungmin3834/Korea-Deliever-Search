@@ -31,7 +31,7 @@ class CodeInput extends Component {
           <span className="inputSpan">
               <label className="inputLabel" >택배사 코드 : </label>
           </span>
-          <select  style={{paddingBottom:"1px"}} id="company-list" onChange={(e)=>{this.selectChange(e.target.value)}}>
+          <select  style={{paddingBottom:"1px"}} id="company-list" value={this.props.code}  onChange={(e)=>{this.selectChange(e.target.value)}}>
               <option value="04"> CJ대한통운</option>
               <option value="05"> 한진택배</option>
               <option value="23"> 경동택배</option>
