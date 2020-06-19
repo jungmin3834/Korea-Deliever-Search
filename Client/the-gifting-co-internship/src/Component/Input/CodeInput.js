@@ -41,6 +41,4 @@ class CodeInput extends Component {
   }
 }
 
-
-
-export default CodeInput
+export default CodeInput;
