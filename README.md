@@ -1,16 +1,10 @@
-# The-Gifting-Co.-Internship
-The Gifting Co. Internship 과제 
-
-
 
 ## 실행 방법
 
 ### React 실행 방법
 1.  https://nodejs.org/en/  노드js 설치  
-2.  https://github.com/jungmin3834/The-Gifting-Co.-Internship 접속하여 Clone 혹은   
-ZIP 파일 설치후 폴더로 이동합니다.  
 
-3. 클라이언트 폴더에 있는 the-gifting-co-internship에 들어간 후 명령어창 혹은 cmd 창을
+3. 클라이언트 폴더에 들어간 후 명령어창 혹은 cmd 창을
  	 실행합니다.   
 
 4..  cmd에서 - npm install 입력 완료 후 npm - start 입력합니다.  
@@ -23,7 +17,7 @@ ZIP 파일 설치후 폴더로 이동합니다.
 	
 
 ### Frontend : React 	
-		Vue, Angular 등을 사용하는 것도 좋지만 기프팅팀에서 주로 사용하는 스택이면서 그리고 평소 독학을 하면서 나름 익숙하다고 생각하는 React를 사용하는 게 더욱 도움일 될 거라 생각해서 Front 부분으로는 React를 사용하였습니다. 
+		Vue, Angular 등을 사용하는 것도 좋지만 주로 사용하는 스택이면서 그리고 평소 독학을 하면서 나름 익숙하다고 생각하는 React를 사용하는 게 더욱 도움일 될 거라 생각해서 Front 부분으로는 React를 사용하였습니다. 
     
 ### Backend : Node.js  
 		최근 프로젝트를 진행할 때 Node.js를 많이 사용했습니다. 그 이유로는 Javascript 기반인 것과 속도 부분에서 빠르게 개발할 수 있다는 장점이 있어서입니다. 그래서인지 기프팅팀의 과제를 진행할 때도 자연스럽게 NodeJs를 백 부분으로 사용하게 된 것 같습니다.  
