@@ -15,7 +15,4 @@ app.get("/api/getTrackingInfo", (req, res) => {controll.getTrackingInfo(req,res)
 
 app.post("/api/trackingInfo", (req, res) => {  controll.trackingInfo(req,res);});
 
-
-app.listen(7878, () => {
- console.log("Server running on port 7878");
-});
+app.listen(7878, () => { console.log("Server running on port 7878");});
